@@ -1,0 +1,16 @@
+body{
+  overflow: hidden;
+}
+
+.App{
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to right, #F6B1A2, #C6B6FB);
+}
+.expensesContainer{
+    position: absolute;
+    /*top: 10%;
+    left: 35%;
+    */transform: translate(100%, 0%);
+}

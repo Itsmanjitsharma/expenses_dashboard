@@ -1,0 +1,93 @@
+.add_expenses{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Adjust based on your preference */
+    max-width: 700px; /* Maximum width for larger screens */
+    height: 90vh; /* Adjust based on your preference */
+    background: #EDE9F0;
+    border-radius: 50px;
+    overflow: auto;
+    margin: auto; /* Center the dashboard */
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+/*.add_expenses{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 580px;
+    background: #EDE9F0;
+    border-radius: 50px;
+}*/
+
+.close{
+    position: absolute;
+    top: 5%;
+    right: 7%;
+    font-size: 20px;
+    color: rgb(184, 179, 179);
+}
+.close:hover{
+    cursor: pointer;
+}
+
+.expensesValue{
+    padding: 20px;
+    border-radius: 40px;
+    text-align: center;
+    border: none;
+    font-size: 20px;
+}
+.Category,.Note, .Date{
+    padding: 5px 10px 10px 10px;
+    margin-top: 6px;
+    color: rgb(184, 179, 179);
+    border: none;
+    border-radius: 10px;
+    width: 80%;
+    background-color: transparent;
+    outline: none;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.expensesSaveButton{
+     position: absolute;
+     padding: 10px 40px;
+     width: 70%;
+     bottom: 30px;
+     left: 15%;
+     border: none;
+     background-image: linear-gradient(90deg, #823cd7, #F6B1A2);
+     border-radius: 20px;
+    }
+    .expensesValue:focus,
+    .Category:focus,
+    .Note:focus,
+    .Date:focus {
+      outline: none; /* Remove default focus outline if desired */
+    }
+
+    .categoryMain,
+    .noteMain,
+    .dateMain {
+        display: flex;
+        align-items: center;
+        background-color: white;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        
+    }
+    .categoryMain{
+        margin-top: 40px;
+    }
+    .icon {
+        margin-right: 10px;
+      }

@@ -1,0 +1,176 @@
+.dashboard{
+    /*position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 580px;
+    background: #EDE9F0;
+    border-radius: 50px;
+    overflow: auto;*/
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Adjust based on your preference */
+    max-width: 700px; /* Maximum width for larger screens */
+    height: 90vh; /* Adjust based on your preference */
+    background: #EDE9F0;
+    border-radius: 50px;
+    overflow: auto;
+    margin: auto; /* Center the dashboard */
+    padding: 10px; /* Add some padding */
+    &::-webkit-scrollbar {
+        width: 0px; 
+      }
+    &::-webkit-scrollbar-thumb {
+        background-color: #888; 
+        border-radius: 2px; 
+      }
+}
+.dashboard_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+.profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.profileDetails p{
+    margin: 0;
+    padding: 0;
+}
+
+.profileDetails h4{
+    margin: 0;
+    padding: 0;
+}
+
+.card{
+    position: relative;
+    box-shadow: rgba(17, 17, 17, 0.1) 0px 3px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    width: calc(100% - 40px); /* Adjusted width considering margins */
+    height: 200px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    background-image: linear-gradient(90deg, #823cd7, #F6B1A2);
+}
+.headingName{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.headingName h3{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+.balance{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: white;
+}
+.balance h1{
+    margin: 0;
+    padding: 0;
+}
+.description{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.incomes,.expensess{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.incomes p{
+    margin: 0px;
+    padding: 0px;
+    color: #EDE9F0;
+}
+.incomes h3{
+    margin: 0px;
+    padding: 0px;
+    color: #fff;
+}
+.expensess p{
+    margin: 0px;
+    padding: 0px;
+    color: #EDE9F0;
+}
+.expensess h3{
+    margin: 0px;
+    padding: 0px;
+    color: #fff;
+}
+.settingIcon{
+    width: 35px;
+    height: 35px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.headings{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.itemsDescription{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+.dailyTransaction{
+    width: calc(100% - 40px); /* Adjusted width considering margins */
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.valueAndDay{
+    margin-right: 10px;
+}
+.valueAndDay p , h3{
+   margin: 0px;
+   padding: 0px;
+   text-align: right;
+}
+.stickyHeader{
+    position: sticky;
+}
+.icons{
+    display: flex;
+    gap: 10px;
+}
+
+.recharts-responsive-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
